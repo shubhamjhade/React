@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 const FloorPlans = () => {
-  // This state tracks which tab is currently active
+
   const [activeTab, setActiveTab] = useState('master');
 
-  // Data for the tabs
+
   const plans = {
     master: {
-      img: "/assets/flat-1.png", // Make sure this exists
+      img: "/assets/flat-1.png",
       title: "Master Plan",
       desc: "A sprawling 8-acre landscape designed for community living."
     },
@@ -34,7 +34,7 @@ const FloorPlans = () => {
           Smart Layouts That Maximize Space, Light, And Everyday Comfort
         </p>
 
-        {/* 1. THE TABS (Buttons) */}
+      
         <div className="mb-12 flex flex-wrap justify-center gap-4">
           <button 
             onClick={() => setActiveTab('master')}
@@ -59,18 +59,18 @@ const FloorPlans = () => {
           </button>
         </div>
 
-        {/* 2. THE ACTIVE IMAGE DISPLAY */}
+   
         <div className="mx-auto max-w-4xl overflow-hidden rounded-xl bg-white p-4 shadow-2xl md:p-8">
           
           <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
-            {/* The Image */}
+     
             <img 
               src={plans[activeTab].img} 
               alt={plans[activeTab].title}
-              className="h-full w-full object-contain" // 'object-contain' shows the full plan without cropping
+              className="h-full w-full object-contain" 
             />
             
-            {/* Overlay Label */}
+          
             <div className="absolute bottom-4 left-4 rounded bg-black/70 px-4 py-2 text-white backdrop-blur-sm">
               <h4 className="font-bold">{plans[activeTab].title}</h4>
             </div>

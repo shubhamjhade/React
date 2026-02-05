@@ -7,7 +7,6 @@ const About = () => {
         
         <div className="flex flex-col gap-12 md:flex-row md:items-center">
           
-          {/* 1. LEFT SIDE: Text Content */}
           <div className="w-full md:w-1/2">
             <h4 className="mb-2 text-sm font-bold uppercase tracking-widest text-red-500">
               Premium Apartments in Whitefield
@@ -32,10 +31,10 @@ const About = () => {
             </button>
           </div>
 
-          {/* 2. RIGHT SIDE: The overlapping Images */}
+      
           <div className="relative w-full md:w-1/2 md:pl-10">
             
-            {/* Big Image (Tree/Garden) */}
+  
             <div className="overflow-hidden rounded-2xl shadow-lg">
               <img 
                 src="/assets/tree.jpg" 
@@ -45,8 +44,6 @@ const About = () => {
               />
             </div>
 
-            {/* Small Floating Image (Chair/Balcony) */}
-            {/* 'absolute' lets us place it exactly where we want. '-bottom-10' pulls it down. '-left-6' pulls it left. */}
             <div className="absolute -bottom-10 -left-6 w-1/2 overflow-hidden rounded-xl border-4 border-white shadow-2xl md:-bottom-12 md:-left-12">
               <img 
                 src="/assets/chair.jpg" 

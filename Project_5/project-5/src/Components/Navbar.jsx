@@ -2,24 +2,21 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    // changed 'bg-white' to 'absolute w-full z-50' so it sits ON TOP of the image
+
     <nav className="absolute top-0 left-0 z-50 w-full p-6">
       
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        
-        {/* LOGO */}
+  
         <div className="flex items-center">
           <img 
             src="/assets/logo.png" 
             alt="Mahindra Lifespaces" 
-            className="h-8 md:h-10" // Adjust height as needed
+            className="h-8 md:h-10" 
           />
         </div>
 
-        {/* RIGHT SIDE BUTTON */}
         <div>
-          
-          {/* DESKTOP BUTTON (+91...) */}
+
           <a 
             href="tel:+919901717339"
             className="hidden md:flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-red-700"
@@ -30,7 +27,7 @@ const Navbar = () => {
             <span>+91 99017 17339</span>
           </a>
 
-          {/* MOBILE BUTTON (Book a Visit) */}
+
           <button className="flex md:hidden items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-sm font-bold text-white shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
